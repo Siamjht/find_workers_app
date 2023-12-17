@@ -89,22 +89,27 @@ class FilterDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                  color: Color(0xFF0668E3),
-              ),
-              alignment: Alignment.center,
-              width: 260,
-              height: 56,
-              child: const Text(
-                "Apply",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w600,
-                  height: 0,
+            GestureDetector(
+              onTap: (){
+
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                    color: Color(0xFF0668E3),
+                ),
+                alignment: Alignment.center,
+                width: 260,
+                height: 56,
+                child: const Text(
+                  "Apply",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w600,
+                    height: 0,
+                  ),
                 ),
               ),
             )

@@ -1,5 +1,5 @@
 
-import 'package:find_workers_app/view/screen/home_screen/home_widgets/bottom_nav_bar.dart';
+import 'package:find_workers_app/view/widgets/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'view/screen/home_screen/home_screen.dart';
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: BottomNavBar(),
-      home: SearchScreen(),
+      home: BottomNavBar(),
+      // home: SearchScreen(),
       // home: Categories(),
       // home: HomeScreen(),
     );

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../utils/const_image.dart';
-import 'home_widgets/bottom_nav_bar.dart';
+import '../../widgets/bottom_nav_bar.dart';
 import 'home_widgets/home_list_view.dart';
 import 'home_widgets/home_widget.dart';
 

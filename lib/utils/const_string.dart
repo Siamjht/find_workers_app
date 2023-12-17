@@ -36,4 +36,9 @@ class ConstString {
   static String hireList = "Hire List";
   static String profile = "Profile";
 
+  static String personalInformation = "Personal Information";
+  static String history = "History";
+  static String settings = "Settings";
+  static String logout = "Logout";
+
 }
