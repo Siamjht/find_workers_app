@@ -41,4 +41,11 @@ class ConstString {
   static String settings = "Settings";
   static String logout = "Logout";
 
+  static String person = "Smith John";
+  static String birthDate = "22-03-1998";
+  static String gender = "Male";
+  static String phoneNumber = "+44 26537 26347";
+  static String mail = "smith@gmail.com";
+  static String location = "Abu Dhabi";
+
 }

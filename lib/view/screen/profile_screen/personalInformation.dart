@@ -1,5 +1,11 @@
 
+import 'package:find_workers_app/utils/const_image.dart';
+import 'package:find_workers_app/utils/const_string.dart';
+import 'package:find_workers_app/view/screen/profile_screen/profile_widgets/personal_info_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'profile_edit.dart';
 
 class PersonalInformation extends StatelessWidget {
   const PersonalInformation({super.key});
@@ -8,7 +14,17 @@ class PersonalInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF0668E3),
+        backgroundColor: const Color(0xFF0668E3),
+        leading: IconButton(
+          onPressed: (){
+            Get.back();
+          },
+          icon: const Icon(
+              Icons.arrow_back_ios_new_rounded,
+            size: 18,
+            color: Colors.white,
+          ),
+        ),
         title: const Text(
           "Personal Information",
           style: TextStyle(
@@ -53,33 +69,42 @@ class PersonalInformation extends StatelessWidget {
                     ),
                     backgroundColor: MaterialStateProperty.all(Colors.white),
                   ),
-                  child: const Text(
-                    "Edit Profile",
-                    style: TextStyle(
-                      color: Color(0xFF0668E3),
-                      fontSize: 14,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w600,
+                  child: InkWell(
+                    onTap: (){
+                      Get.to(const ProfileEdit());
+                    },
+                    child: const Text(
+                      "Edit Profile",
+                      style: TextStyle(
+                        color: Color(0xFF0668E3),
+                        fontSize: 14,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                 ),
               ],
             ),
           ),
-          // Container(
-          //   width: MediaQuery.of(context).size.width,
-          //   padding: const EdgeInsets.all(16),
-          //   child: Column(
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     crossAxisAlignment: CrossAxisAlignment.center,
-          //     children: [
-          //       ProfileWidget(personIcon: ConstImage.personIcon, personInformation: ConstString.personalInformation, itemNumber: 0,),
-          //       ProfileWidget(personIcon: ConstImage.historyIcon, personInformation: ConstString.history, itemNumber: 1,),
-          //       ProfileWidget(personIcon: ConstImage.settingsIcon, personInformation: ConstString.settings, itemNumber: 2,),
-          //       ProfileWidget(personIcon: ConstImage.logoutIcon, personInformation: ConstString.logout, itemNumber: 3,),
-          //     ],
-          //   ),
-          // )
+          Container(
+            width: MediaQuery.of(context).size.width,
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                PersonalInfoWidget(personIcon: ConstImage.personIcon , personInformation: ConstString.person, onTap: (){
+                  Get.to(ProfileEdit());
+                },),
+                PersonalInfoWidget(personIcon: ConstImage.birthIcon, personInformation: ConstString.birthDate, onTap: (){}),
+                PersonalInfoWidget(personIcon: ConstImage.genderIcon, personInformation: ConstString.gender, onTap: (){}),
+                PersonalInfoWidget(personIcon: ConstImage.phoneIcon, personInformation: ConstString.phoneNumber, onTap: (){}),
+                PersonalInfoWidget(personIcon: ConstImage.mailIcon, personInformation: ConstString.mail, onTap: (){}),
+                PersonalInfoWidget(personIcon: ConstImage.locationIcon, personInformation: ConstString.location, onTap: (){}),
+              ],
+            ),
+          )
         ],
       ),
     );

@@ -49,4 +49,10 @@ class ConstImage {
   static String historyIcon = "assets/icons/historyIcon.png";
   static String settingsIcon = "assets/icons/settingsIcon.png";
   static String logoutIcon = "assets/icons/logoutIcon.png";
+
+  static String birthIcon = "assets/icons/birthIcon.png";
+  static String genderIcon = "assets/icons/genderIcon.png";
+  static String phoneIcon = "assets/icons/phoneIcon.png";
+  static String mailIcon = "assets/icons/mailIcon.png";
+  static String locationIcon = "assets/icons/mailIcon.png";
 }

@@ -7,7 +7,10 @@ class ProfileEdit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("This is Profile Edit Page"),
+      appBar: AppBar(
+        title: Text("Edit Personal Information"),
+      ),
+      body: SafeArea(child: Text("This is Profile Edit Page")),
     );
   }
 }

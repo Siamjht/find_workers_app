@@ -1,6 +1,6 @@
 import 'package:find_workers_app/utils/const_image.dart';
 import 'package:find_workers_app/utils/const_string.dart';
-import 'package:find_workers_app/view/screen/profile_screen/profile_widget.dart';
+import 'package:find_workers_app/view/screen/profile_screen/profile_widgets/profile_widget.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {

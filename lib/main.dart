@@ -1,6 +1,7 @@
 
 import 'package:find_workers_app/view/widgets/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'view/screen/home_screen/home_screen.dart';
 import 'view/screen/search_screen/search_screen.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: BottomNavBar(),
       // home: SearchScreen(),
